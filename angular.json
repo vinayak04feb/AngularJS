@@ -34,12 +34,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -90,10 +85,8 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/asset",
+              "public"
             ],
             "styles": [
               "src/styles.scss"
@@ -103,8 +96,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "aeb0f75d-712b-4478-9878-dcb1f6f79c3a"
   }
 }
